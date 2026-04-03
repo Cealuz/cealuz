@@ -1,27 +1,34 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center relative overflow-hidden">
+    <main style={{
+      backgroundColor: "#0a0a0a",
+      color: "#e8e8e8",
+      height: "100vh",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      fontFamily: "serif",
+      letterSpacing: "0.05em"
+    }}>
 
-      {/* Subtle background glow */}
-      <div className="absolute w-[800px] h-[800px] bg-white/5 blur-[200px] rounded-full"></div>
+      <h1 style={{
+        fontSize: "4rem",
+        fontWeight: "300",
+        marginBottom: "20px"
+      }}>
+        CEALUZ
+      </h1>
 
-      {/* Center content */}
-      <div className="text-center space-y-6 z-10">
-
-        <h1 className="text-6xl md:text-8xl font-light tracking-[0.4em]">
-          CEALUZ
-        </h1>
-
-        <p className="text-gray-400 text-lg tracking-[0.25em] uppercase">
-          Private Journeys
-        </p>
-
-        <p className="max-w-xl text-gray-500 text-sm leading-relaxed">
-          For those who no longer travel to escape life,
-          but to design it.
-        </p>
-
-      </div>
+      <p style={{
+        fontSize: "1.2rem",
+        opacity: 0.7,
+        textAlign: "center",
+        maxWidth: "600px",
+        lineHeight: "1.6"
+      }}>
+        A private world of curated journeys, silence, and rare places.
+      </p>
 
     </main>
   );
