@@ -3,21 +3,23 @@ export default function Home() {
     <main
       style={{
         height: "100vh",
-        background: "radial-gradient(circle at center, #111 0%, #050505 70%)",
+        background:
+          "radial-gradient(circle at center, #0a0a0a 0%, #020202 80%)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
         color: "#eaeaea",
         fontFamily: "serif",
-        letterSpacing: "0.15em"
+        letterSpacing: "0.2em"
       }}
     >
       <h1
         style={{
-          fontSize: "5rem",
+          fontSize: "6rem",
           fontWeight: "200",
-          marginBottom: "30px"
+          marginBottom: "40px",
+          textShadow: "0 0 30px rgba(198,161,91,0.25)"
         }}
       >
         CEALUZ
@@ -25,19 +27,26 @@ export default function Home() {
 
       <p
         style={{
-          maxWidth: "600px",
+          maxWidth: "620px",
           textAlign: "center",
           opacity: 0.65,
-          fontSize: "1.1rem",
-          lineHeight: "1.7"
+          fontSize: "1.15rem",
+          lineHeight: "1.8"
         }}
       >
         A private world of curated journeys, silent retreats,
         and rare destinations for those who move beyond the ordinary.
       </p>
 
-      <div style={{ marginTop: "50px", opacity: 0.6 }}>
-        Enter
+      <div
+        style={{
+          marginTop: "70px",
+          letterSpacing: "0.5em",
+          fontSize: "0.9rem",
+          opacity: 0.7
+        }}
+      >
+        ENTER
       </div>
     </main>
   );
