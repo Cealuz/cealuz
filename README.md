@@ -1,4 +1,8 @@
-## Hi there 👋
+# cealuz
+
+First version of the Cealuz project.
+
+Built with GitHub Pages.
 
 <!--
 **Cealuz/cealuz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
