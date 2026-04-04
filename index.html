@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>CEALUZ</title>
@@ -10,37 +9,43 @@
 body{
 margin:0;
 height:100vh;
-background:#050505;
+background:#0B0B0B;
 display:flex;
 justify-content:center;
 align-items:center;
 flex-direction:column;
 font-family:serif;
 color:#F3EFE6;
-letter-spacing:0.4em;
+letter-spacing:0.35em;
+animation:fadeIn 2s ease;
 }
 
 h1{
-font-size:72px;
+font-size:80px;
 font-weight:200;
-text-shadow:0 0 40px rgba(198,167,91,0.3);
+text-shadow:0 0 50px rgba(198,167,91,0.25);
 }
 
 button{
 margin-top:60px;
-padding:14px 36px;
+padding:16px 40px;
 background:none;
 border:1px solid rgba(198,167,91,0.4);
 color:#F3EFE6;
 letter-spacing:0.4em;
 font-size:12px;
 cursor:pointer;
-transition:all 1s ease;
+transition:all 1.2s ease;
 }
 
 button:hover{
 border-color:#C6A75B;
-box-shadow:0 0 20px rgba(198,167,91,0.3);
+box-shadow:0 0 25px rgba(198,167,91,0.3);
+}
+
+@keyframes fadeIn{
+from{opacity:0}
+to{opacity:1}
 }
 
 </style>
@@ -56,16 +61,25 @@ box-shadow:0 0 20px rgba(198,167,91,0.3);
 <script>
 
 function enter(){
+
 document.body.innerHTML = `
-<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#050505;color:#F3EFE6;font-family:serif;text-align:center;padding:40px;">
+<div style="height:100vh;background:#0B0B0B;display:flex;justify-content:center;align-items:center;text-align:center;padding:40px;font-family:serif;color:#F3EFE6">
+
 <div>
-<h2 style="font-size:48px;font-weight:200;margin-bottom:30px;">Private Journeys</h2>
-<p style="max-width:600px;font-size:20px;line-height:1.6">
+
+<h2 style="font-size:52px;font-weight:200;margin-bottom:30px;letter-spacing:0.1em">
+Private Journeys
+</h2>
+
+<p style="max-width:650px;font-size:20px;line-height:1.7">
 Crafted for those who value silence, beauty, and time.
 </p>
+
 </div>
+
 </div>
 `;
+
 }
 
 </script>
