@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cealuz</title>
+
+<title>CEALUZ</title>
+
 <style>
+
 body{
-background:black;
-color:white;
-font-family:sans-serif;
+margin:0;
+height:100vh;
+background:radial-gradient(circle at center,#111,#000);
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
-font-size:40px;
+font-family:Arial;
+overflow:hidden;
 }
+
+h1{
+color:white;
+font-size:80px;
+letter-spacing:12px;
+text-shadow:
+0 0 10px white,
+0 0 20px white,
+0 0 40px white;
+animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+from{opacity:0.6}
+to{opacity:1}
+}
+
 </style>
+
 </head>
 
 <body>
 
-CEALUZ
+<h1>CEALUZ</h1>
 
 </body>
-
 </html>
