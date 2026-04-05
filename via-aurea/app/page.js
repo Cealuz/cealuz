@@ -9,21 +9,22 @@ export default function Home() {
       <main
         style={{
           height: "100vh",
-          background: "#0B0B0B",
+          background: "radial-gradient(circle at center,#0a0a0a 0%,#020202 80%)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          color: "#F3EFE6",
+          color: "#eaeaea",
           fontFamily: "serif",
+          letterSpacing: "0.25em",
         }}
       >
         <h1
           style={{
             fontSize: "6rem",
-            letterSpacing: "0.25em",
             fontWeight: "200",
-            color: "#C6A75B",
+            marginBottom: "40px",
+            textShadow: "0 0 30px rgba(198,167,91,0.25)",
           }}
         >
           CEALUZ
@@ -32,12 +33,12 @@ export default function Home() {
         <div
           onClick={() => setEntered(true)}
           style={{
-            marginTop: "40px",
             cursor: "pointer",
-            border: "1px solid #C6A75B",
-            padding: "12px 28px",
+            border: "1px solid rgba(198,167,91,0.4)",
+            padding: "12px 30px",
             letterSpacing: "0.4em",
             fontSize: "0.9rem",
+            transition: "all 0.6s ease",
           }}
         >
           ENTER
@@ -47,105 +48,60 @@ export default function Home() {
   }
 
   return (
-    <main style={{ background: "#0B0B0B", color: "#F3EFE6" }}>
-      
+    <main
+      style={{
+        background: "#0B0B0B",
+        color: "#F3EFE6",
+        minHeight: "100vh",
+        fontFamily: "serif",
+      }}
+    >
+      {/* HERO */}
       <section
         style={{
           height: "100vh",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column",
           textAlign: "center",
+          padding: "40px",
         }}
       >
-        <h1 style={{ fontSize: "80px", fontWeight: "300" }}>
+        <h1
+          style={{
+            fontSize: "5rem",
+            fontWeight: "200",
+            marginBottom: "30px",
+          }}
+        >
           Private Journeys
         </h1>
 
-        <p style={{ maxWidth: "600px", marginTop: "20px", fontSize: "20px" }}>
-          Crafted quietly for those who value time, beauty, and discovery.
+        <p
+          style={{
+            maxWidth: "600px",
+            fontSize: "1.3rem",
+            lineHeight: "1.6",
+            opacity: 0.8,
+          }}
+        >
+          Crafted quietly for those who value time,
+          beauty, and discovery.
         </p>
 
-        <button
+        <div
           style={{
             marginTop: "40px",
             border: "1px solid #C6A75B",
-            padding: "12px 28px",
-            background: "transparent",
-            color: "#F3EFE6",
+            padding: "14px 30px",
+            cursor: "pointer",
+            letterSpacing: "0.2em",
+            transition: "all 0.6s ease",
           }}
         >
           Request Access
-        </button>
-      </section>
-
-      <section
-        style={{
-          padding: "120px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ fontSize: "48px" }}>
-          Some journeys are not booked.
-        </h2>
-
-        <p style={{ marginTop: "20px", fontSize: "22px" }}>
-          They are composed.
-        </p>
-      </section>
-
-      <section
-        style={{
-          padding: "120px 20px",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(250px,1fr))",
-          gap: "40px",
-        }}
-      >
-        {[
-          "The Hidden Coast",
-          "The Emerald Highlands",
-          "The Silent Volcano",
-          "The Private Archipelago",
-          "The Lost Jungle",
-        ].map((journey) => (
-          <div
-            key={journey}
-            style={{
-              border: "1px solid rgba(198,167,91,0.2)",
-              padding: "40px",
-              textAlign: "center",
-            }}
-          >
-            <h3>{journey}</h3>
-          </div>
-        ))}
-      </section>
-
-      <section
-        style={{
-          padding: "120px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2>A Private Circle</h2>
-
-        <p style={{ marginTop: "20px" }}>
-          Membership is extended to those who seek rare experiences.
-        </p>
-
-        <button
-          style={{
-            marginTop: "30px",
-            border: "1px solid #C6A75B",
-            padding: "12px 28px",
-            background: "transparent",
-            color: "#F3EFE6",
-          }}
-        >
-          Request Membership
-        </button>
+        </div>
       </section>
     </main>
   );
