@@ -1,88 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CEALUZ</title>
+<title>CEALUZ | Private Journeys Through Central America</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
+background:#050505;
+color:#e8e1d0;
+font-family:Inter;
+}
+
+.hero{
 height:100vh;
-background:#0B0B0B;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-flex-direction:column;
-font-family:serif;
-color:#F3EFE6;
-letter-spacing:0.35em;
-animation:fadeIn 2s ease;
+text-align:center;
+padding:30px;
 }
 
-h1{
-font-size:80px;
-font-weight:200;
-text-shadow:0 0 50px rgba(198,167,91,0.25);
+.logo{
+font-family:"Playfair Display";
+font-size:70px;
+letter-spacing:12px;
+color:#d4af37;
+margin-bottom:10px;
 }
 
-button{
-margin-top:60px;
-padding:16px 40px;
-background:none;
-border:1px solid rgba(198,167,91,0.4);
-color:#F3EFE6;
-letter-spacing:0.4em;
-font-size:12px;
-cursor:pointer;
-transition:all 1.2s ease;
+.tagline{
+font-size:14px;
+letter-spacing:4px;
+color:#c9b77c;
+margin-bottom:40px;
 }
 
-button:hover{
-border-color:#C6A75B;
-box-shadow:0 0 25px rgba(198,167,91,0.3);
+.hero h1{
+font-family:"Playfair Display";
+font-weight:400;
+font-size:40px;
+max-width:800px;
+line-height:1.3;
+margin-bottom:30px;
 }
 
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
+.hero p{
+max-width:650px;
+opacity:0.8;
+line-height:1.6;
+}
+
+.button{
+margin-top:40px;
+padding:14px 30px;
+border:1px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+letter-spacing:2px;
+transition:0.3s;
+}
+
+.button:hover{
+background:#d4af37;
+color:#050505;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<h1>CEALUZ</h1>
+<section class="hero">
 
-<button onclick="enter()">ENTER</button>
+<div class="logo">CEALUZ</div>
 
-<script>
+<div class="tagline">
+PRIVATE JOURNEYS THROUGH CENTRAL AMERICA
+</div>
 
-function enter(){
+<h1>
+Luxury travel designed personally for you.
+</h1>
 
-document.body.innerHTML = `
-<div style="height:100vh;background:#0B0B0B;display:flex;justify-content:center;align-items:center;text-align:center;padding:40px;font-family:serif;color:#F3EFE6">
-
-<div>
-
-<h2 style="font-size:52px;font-weight:200;margin-bottom:30px;letter-spacing:0.1em">
-Private Journeys
-</h2>
-
-<p style="max-width:650px;font-size:20px;line-height:1.7">
-Crafted for those who value silence, beauty, and time.
+<p>
+Volcanoes at sunrise. Colonial cities under candlelight. Hidden beaches only locals know.
+CEALUZ creates private journeys through Nicaragua and Central America for travelers who want something extraordinary.
 </p>
 
-</div>
+<a class="button" href="#">Begin Your Journey</a>
 
-</div>
-`;
-
-}
-
-</script>
+</section>
 
 </body>
 </html>
