@@ -106,3 +106,30 @@ export default function Home() {
     </main>
   );
 }
+
+<section className="relative h-screen flex items-center justify-center bg-black text-center">
+
+<div className="absolute inset-0 bg-gradient-to-b from-black via-[#050505] to-black opacity-95"></div>
+
+<div className="relative z-10 max-w-3xl px-6">
+
+<h1 className="text-5xl md:text-7xl font-light tracking-[0.3em] text-[#D4AF37]">
+CRALUZ
+</h1>
+
+<p className="mt-8 text-lg md:text-xl text-gray-300 leading-relaxed">
+Private journeys for the exceptionally curious.
+</p>
+
+<p className="mt-4 text-sm text-gray-400 italic">
+Journeys are not selected.  
+They are curated.
+</p>
+
+<button className="mt-12 border border-[#D4AF37] text-[#D4AF37] px-8 py-3 tracking-widest hover:bg-[#D4AF37] hover:text-black transition duration-500">
+Request Invitation
+</button>
+
+</div>
+
+</section>
